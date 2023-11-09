@@ -17,11 +17,12 @@ printf("\nEnter element %d:" ,i+1);
 scanf("%d", & arr[i]);
   
 }//end i loop
+printf("The co-ordinates of the pairs are");
 for(i=0;i<n;i++){
     for(j=i+1;j<n;j++){
      if (arr[i]+arr[j]==x){
          totalpairs++;
-         printf("The co-ordinates of the pairs are");
+         
           printf("\n(%d,%d)" , i , j ) ;
      }//end if  
     
@@ -31,3 +32,4 @@ printf("\nThe total number of pairs that add up to %d are %d" ,x , totalpairs);
 
     
  return 0;
+}//end main
