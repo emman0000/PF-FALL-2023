@@ -78,7 +78,7 @@ int main(int argc, char* argv[]) {
         exit(EXIT_FAILURE);
     }
 	
-   	const char* studentID="0008";
+   	const char* studentID="0051";
    	char student[10];
    	printf("\nEnter the student id: ");
    	scanf("%s",&student);
