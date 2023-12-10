@@ -1,12 +1,14 @@
 //Programmer Emman Ali
+//ID-23k0051
 //10/12/23
 //Filing question 2
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include<stdbool.h>
 
 // Structure to represent an employee
+//consist of different members for all relevant information
 struct Employee {
     char name[20];
     char role[20];
@@ -16,6 +18,7 @@ struct Employee {
 };
 
 // Structure to represent a department
+//nested structure that helps hold the details of the initial employee structure
 struct Department {
     char name[20];
     struct Employee employees[5]; //an array of structures
@@ -87,18 +90,18 @@ void printDepartmentDetails(struct Department *department) {
                department->employees[i].teamwork,
                department->employees[i].creativity);
     }
-
+//print a pattern for seperation.
     printf("|------------|------------|--------------|---------------|----------|------------|\n");
 }
-
+//main function starts 
 int main() {
 	
-	printf("Muhammad Abbas\n23K-0068\n\n");
+	printf("Emman Ali\n23K-0059\n\n");
 
 
     // Pool of names for random assignment
-    char namePool[][20] = {"Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hank", "Ivy", "Jack",
-                           "Katie", "Liam", "Mia", "Noah", "Olivia", "Peter", "Quinn", "Rachel", "Sam", "Tom"};
+    char namePool[][20] = {"Emman", "Areeba", "Rumaisa", "Sana", "James", "Stalin", "Harry", "Hank", "Peter", "Ahmed",
+                           "Jade", "Vittoria", "Liz", "Khan", "Blake", "Arthur", "Quinn", "Omar", "Inshie", "Pom"};
 
     // Pool of roles
     char rolePool[][20] = {"Director", "Executive", "Manager", "Employee", "Trainee"};
