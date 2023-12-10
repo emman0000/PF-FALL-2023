@@ -1,4 +1,5 @@
 //Programmer Emman Ali
+//ID- 23k0051
 //10/12/23
 //Filing question 4
 #include <stdio.h>
@@ -102,7 +103,7 @@ void fetchTotalSalariesByDepartment(struct Employee employees[], int size) {
 }
 
 int main() {
-    printf("Muhammad Sabeeh\n23k-0002\n\n");
+    printf("Emman Ali\n23k-0051\n\n");
 //structure in main function for all employees 
     struct Employee employees[] = {
         {1, "Monika", "Arora", 100000, "2014-02-20 09:00:00", "HR"},
